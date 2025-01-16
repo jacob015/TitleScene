@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/LobbyMain/Scenes/LobbyScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/LobbyMain/Scenes/MainScene.unity
+    guid: 3a39d399ed1088649b6cab70243b283a
+  - enabled: 1
+    path: Assets/LobbyMain/Scenes/SelectScene.unity
+    guid: 89239cd14eeea5948ad11d1765e3c82d
+  - enabled: 1
+    path: Assets/PangPangPang/Scenes/MainScene.unity
+    guid: b9eb9b2b3219a7d498136f4aef7a3360
+  - enabled: 1
+    path: Assets/PangPangPang/Scenes/GameScene.unity
+    guid: d213424fbe2789043b86188df38d9c64
+  - enabled: 1
+    path: Assets/SpaceshipRepair/Scenes/MainMenu.unity
+    guid: 5eda09c382d70ab47992826b3640e991
+  - enabled: 1
+    path: Assets/SpaceshipRepair/Scenes/GameScene.unity
+    guid: 8aa3989fca9ed0d49968bc3608912adf
+  - enabled: 1
+    path: Assets/SpaceshipRepair/Scenes/Play.unity
+    guid: 329c827f886073040b2250fb5b097235
+  - enabled: 1
+    path: Assets/ColorMatch/Color/Scenes/ColorMacthMain.unity
+    guid: 9986a574276099d4ab3bd1122f899661
+  - enabled: 1
+    path: Assets/ColorMatch/Color/Scenes/ColorMacthGame.unity
+    guid: e64c62c3b65408a48bd0723586320fad
+  - enabled: 1
+    path: Assets/TouchUP/Scenes/Title.unity
+    guid: 8a59584400ba99645adbe033f5888a78
+  - enabled: 1
+    path: Assets/TouchUP/Scenes/Main.unity
+    guid: 1b1d9d6d66a022f448d4a82aac632b5d
+  - enabled: 1
+    path: Assets/FollowThePath/Scenes/FollowThePath_Main.unity
+    guid: aa55012593752b84ab7cbb985560fae7
+  - enabled: 1
+    path: Assets/FollowThePath/Scenes/FollowThePath_Game.unity
+    guid: 95f9c1f47da85ba41ae6d251395c6cf0
+  - enabled: 1
+    path: Assets/SpaceFarm/Scenes/SpaceFarm_Main.unity
+    guid: 4741e471cccea1049be5e6b50f861c7d
+  - enabled: 1
+    path: Assets/SpaceFarm/Scenes/SpaceFarm_Game.unity
+    guid: c82ee7d5af3e114459761e14da0e0400
+  - enabled: 1
+    path: Assets/MergePlanet/Scenes/MergePlanetMainScene.unity
+    guid: 18399a9306fbee047b1fe88f15e70e69
+  - enabled: 1
+    path: Assets/MergePlanet/Scenes/MergePlanetGameScene.unity
+    guid: 3d45643d4bcda994dbb11e9015060ab9
+  - enabled: 1
+    path: Assets/Venus/Scenes/TempMain.unity
+    guid: e82c518fc93624a4ea9cbf6b7c0111f0
+  - enabled: 1
+    path: Assets/Venus/Scenes/TempGame.unity
+    guid: d0ce9e2f35685dc449eec83f237b2398
+  - enabled: 1
+    path: Assets/Venus/Scenes/TempLoad.unity
+    guid: d889ca5f7c6665648b634fca7e2b6621
+  - enabled: 1
+    path: Assets/Dance_Alien/Scenes/Menu.unity
+    guid: 24ed8766ffe17c64e99be76d5e7abe8e
+  - enabled: 1
+    path: Assets/Dance_Alien/Scenes/InGame.unity
+    guid: 36c6fac1601a7d94395b11c0d7fddf0f
+  - enabled: 1
+    path: Assets/Dance_Alien/Scenes/Result.unity
+    guid: 5cf90d9cc544c274897f073781db5de6
+  m_configObjects: {}

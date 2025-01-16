@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89598db564e2c204bbace4787e3bd1fc, type: 3}
+  m_Name: SeedData3
+  m_EditorClassIdentifier: 
+  score: 60
+  _firstSprite: {fileID: -2105530009, guid: 20bae991b5f8c6f43aaaf67ae261e8be, type: 3}
+  seedStateList:
+  - goal: 1
+    maxTime: 20
+    sprite: {fileID: 254112618, guid: 2faebd750b7e09745b386d0e63c83b9c, type: 3}
+  - goal: 0
+    maxTime: 25
+    sprite: {fileID: 477907428, guid: c9524754eb306e642ab02de7b4b93d42, type: 3}

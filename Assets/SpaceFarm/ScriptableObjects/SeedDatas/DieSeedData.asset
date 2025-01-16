@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ed003cd8f88f348a91131ab71a0ddb, type: 3}
+  m_Name: DieSeedData
+  m_EditorClassIdentifier: 
+  score: 0
+  _firstSprite: {fileID: 0}
+  seedStateList:
+  - goal: 2
+    maxTime: 0
+    sprite: {fileID: 0}
+  _sprites:
+  - {fileID: 1822772530, guid: 356aee6239fb68e469d04ce5520e931f, type: 3}
+  - {fileID: -609975661, guid: 87b2d8b61f813854b81838443bf25107, type: 3}
+  - {fileID: -2115751915, guid: 22467d6940c954844912f3c674812c04, type: 3}

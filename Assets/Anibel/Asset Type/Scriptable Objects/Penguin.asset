@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82468fb569640b44f98f3a9336a09917, type: 3}
+  m_Name: Penguin
+  m_EditorClassIdentifier: 
+  _dropSprite: {fileID: 21300000, guid: ec280ed5d08291349adf82021a9c5443, type: 3}
+  _nervousSprite: {fileID: 21300000, guid: ecec589312ed8c24abb5cc8857eaf444, type: 3}
+  _normalSprite: {fileID: 21300000, guid: 018125f0945ccde4fb94a442f9a546dc, type: 3}
+  _surprisedSprite: {fileID: 21300000, guid: ce766a37f54850d4884ca3c0c3b6fb9d, type: 3}

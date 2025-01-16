@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfe6c56335bdb34db615f40e20a1e85, type: 3}
+  m_Name: Tile12
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 21300000, guid: d517531a5a98633448a1a82ddc0affe5, type: 3}
+  _emptySprite: {fileID: 21300000, guid: 209c7090bfc347c4ab5188ce16592244, type: 3}

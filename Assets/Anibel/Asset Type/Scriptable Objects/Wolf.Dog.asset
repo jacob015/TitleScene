@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82468fb569640b44f98f3a9336a09917, type: 3}
+  m_Name: Wolf.Dog
+  m_EditorClassIdentifier: 
+  _dropSprite: {fileID: 21300000, guid: 40e56459010e43c40b9d004354b8c75c, type: 3}
+  _nervousSprite: {fileID: 21300000, guid: 9dc883d41a41f87428ebefce1a653caa, type: 3}
+  _normalSprite: {fileID: 21300000, guid: 9dc883d41a41f87428ebefce1a653caa, type: 3}
+  _surprisedSprite: {fileID: 21300000, guid: 9dc883d41a41f87428ebefce1a653caa, type: 3}

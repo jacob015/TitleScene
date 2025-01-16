@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82468fb569640b44f98f3a9336a09917, type: 3}
+  m_Name: Wolf.Rabbit
+  m_EditorClassIdentifier: 
+  _dropSprite: {fileID: 21300000, guid: 2552112e10796ea40b2f9380154b8d71, type: 3}
+  _nervousSprite: {fileID: 21300000, guid: 3754a556b3cf8484aaac1883150455b0, type: 3}
+  _normalSprite: {fileID: 21300000, guid: 3754a556b3cf8484aaac1883150455b0, type: 3}
+  _surprisedSprite: {fileID: 21300000, guid: 3754a556b3cf8484aaac1883150455b0, type: 3}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82468fb569640b44f98f3a9336a09917, type: 3}
+  m_Name: Cat
+  m_EditorClassIdentifier: 
+  _dropSprite: {fileID: 21300000, guid: 626f746a897a94e47890a0265fd8a473, type: 3}
+  _nervousSprite: {fileID: 21300000, guid: d0995a0e0d5ac9a4fac50ae6fe8da877, type: 3}
+  _normalSprite: {fileID: 21300000, guid: a8c8f7136e66a7f4f831673499953495, type: 3}
+  _surprisedSprite: {fileID: 21300000, guid: 0912303bfacfb6246b3b953113db2667, type: 3}
