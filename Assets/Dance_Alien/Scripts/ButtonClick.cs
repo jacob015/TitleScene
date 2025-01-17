@@ -62,7 +62,7 @@ public class ButtonClick : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("InGame");
+        SceneManager.LoadScene("Alien InGame");
     }
 
     public void Quit()
@@ -82,7 +82,7 @@ public class ButtonClick : MonoBehaviour
 
     public void ReturnMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Alien Menu");
     }
 
     public void ResetScore()

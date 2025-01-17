@@ -13,15 +13,15 @@ namespace PangPangPang
         {
             _mainCanvas = GameObject.Find("MainCanvas");
 
-            //Default ÇØ»óµµ ºñÀ²
+            //Default í•´ìƒë„ ë¹„ìœ¨
             float fixedAspectRatio = 9f / 16f;
 
-            //ÇöÀç ÇØ»óµµÀÇ ºñÀ²
+            //í˜„ì¬ í•´ìƒë„ì˜ ë¹„ìœ¨
             float currentAspectRatio = (float)Screen.width / (float)Screen.height;
 
-            //ÇöÀç ÇØ»óµµ °¡·Î ºñÀ²ÀÌ ´õ ±æ °æ¿ì
+            //í˜„ì¬ í•´ìƒë„ ê°€ë¡œ ë¹„ìœ¨ì´ ë” ê¸¸ ê²½ìš°
             if (currentAspectRatio > fixedAspectRatio) _mainCanvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 1;
-            //ÇöÀç ÇØ»óµµÀÇ ¼¼·Î ºñÀ²ÀÌ ´õ ±æ °æ¿ì
+            //í˜„ì¬ í•´ìƒë„ì˜ ì„¸ë¡œ ë¹„ìœ¨ì´ ë” ê¸¸ ê²½ìš°
             else if (currentAspectRatio < fixedAspectRatio) _mainCanvas.GetComponent<CanvasScaler>().matchWidthOrHeight = 0;
         }
 

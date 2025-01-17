@@ -9,7 +9,7 @@ namespace Anibel
     {
         public void StartButton()
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("Anibel Main");
         }
     }
 }

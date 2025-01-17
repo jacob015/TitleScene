@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/LobbyMain/Scenes/SelectScene.unity
     guid: 89239cd14eeea5948ad11d1765e3c82d
   - enabled: 1
-    path: Assets/PangPangPang/Scenes/MainScene.unity
+    path: Assets/PangPangPang/Scenes/Pang MainScene.unity
     guid: b9eb9b2b3219a7d498136f4aef7a3360
   - enabled: 1
-    path: Assets/PangPangPang/Scenes/GameScene.unity
+    path: Assets/PangPangPang/Scenes/Pang GameScene.unity
     guid: d213424fbe2789043b86188df38d9c64
   - enabled: 1
     path: Assets/SpaceshipRepair/Scenes/MainMenu.unity
@@ -69,12 +69,18 @@ EditorBuildSettings:
     path: Assets/Venus/Scenes/TempLoad.unity
     guid: d889ca5f7c6665648b634fca7e2b6621
   - enabled: 1
-    path: Assets/Dance_Alien/Scenes/Menu.unity
+    path: Assets/Dance_Alien/Scenes/Alien Menu.unity
     guid: 24ed8766ffe17c64e99be76d5e7abe8e
   - enabled: 1
-    path: Assets/Dance_Alien/Scenes/InGame.unity
+    path: Assets/Dance_Alien/Scenes/Alien InGame.unity
     guid: 36c6fac1601a7d94395b11c0d7fddf0f
   - enabled: 1
-    path: Assets/Dance_Alien/Scenes/Result.unity
+    path: Assets/Dance_Alien/Scenes/Alien Result.unity
     guid: 5cf90d9cc544c274897f073781db5de6
+  - enabled: 1
+    path: Assets/Anibel/Asset Type/Scenes/Anibel Title.unity
+    guid: f801b090179737f4bbaa646a2f6bea9d
+  - enabled: 1
+    path: Assets/Anibel/Asset Type/Scenes/Anibel Main.unity
+    guid: 1b5e9bebc35b5bb41b8f72825c56052d
   m_configObjects: {}

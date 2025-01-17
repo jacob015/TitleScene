@@ -31,14 +31,14 @@ namespace Anibel
         {
             SoundManager.Instance.PlaySFX("UISmall");
             Time.timeScale = 1f;
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("Anibel Main");
         }
 
         public void MainTitleButton()
         {
             SoundManager.Instance.PlaySFX("UISmall");
             Time.timeScale = 1f;
-            SceneManager.LoadScene("Title");
+            SceneManager.LoadScene("Anibel Title");
         }
 
         public void CountinueButton()

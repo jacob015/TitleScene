@@ -79,7 +79,7 @@ public class GameMng : MonoBehaviour
         }
 
         Dead();
-        inGameScore.text = (int)score + "¡°";
+        inGameScore.text = (int)score + "Ï†ê";
         ScoreMng.Instance.score = score;
         if (isDead == false)
         {

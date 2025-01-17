@@ -14,8 +14,8 @@ namespace PangPangPang
 
         [SerializeField] private int _missCountMax = 3;
         private int _missCount;
-        [SerializeField] private float _playTimeMax = 90; //ÃÊ(s)
-        private float _playTime; //ÃÊ(s)
+        [SerializeField] private float _playTimeMax = 90; //ì´ˆ(s)
+        private float _playTime; //ì´ˆ(s)
         private Define.GameState _gameState = Define.GameState.PAUSE;
         private Define.GameState _lastGameState;
 
@@ -113,7 +113,7 @@ namespace PangPangPang
 
                 if (_gameState == Define.GameState.END)
                 {
-                    FinishGame(); // °ÔÀÓ ³¡
+                    FinishGame(); // ê²Œì„ ë
                 }
             }
         }
@@ -200,7 +200,7 @@ namespace PangPangPang
 
         }
 
-        private void FinishGame() //°ÔÀÓ ³¡³µÀ» ¶§ ½ÇÇàÇÏ´Â ¸Ş¼­µå
+        private void FinishGame() //ê²Œì„ ëë‚¬ì„ ë•Œ ì‹¤í–‰í•˜ëŠ” ë©”ì„œë“œ
         {
             SoundManager.Instance.StopAll();
             SoundManager.Instance.Play(Define.AudioType.SFX, "SFX_Open");
@@ -242,7 +242,7 @@ namespace PangPangPang
             SoundManager.Instance.SetPitch(Define.AudioType.BGM, 1.2f);
             SoundManager.Instance.Play(Define.AudioType.BGM, "BGM_GamePlay");
 
-            // ½ºÆù °ª º¯°æ
+            // ìŠ¤í° ê°’ ë³€ê²½
             FindObjectOfType<SpawnManager>().SpawnDelay = 0.4f;
             FindObjectOfType<SpawnManager>().HideTime = 1;
 
