@@ -7,7 +7,7 @@ namespace TouchUp
     {
         public void ChangeScene()
         {
-            SceneManager.LoadScene("TouchUP/Scenes/Main");
+            SceneManager.LoadScene("TouchUP/Scenes/TouchUP Main");
         }
     }
 }

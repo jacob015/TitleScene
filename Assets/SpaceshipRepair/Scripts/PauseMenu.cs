@@ -42,8 +42,8 @@ namespace SpaceShipRepair
         public void QuitToMainMenu()
         {
             Time.timeScale = 1f;
-            // ¸ÞÀÎ ¸Þ´º·Î µ¹¾Æ°¡´Â ·ÎÁ÷ Ãß°¡
-            SceneManager.LoadScene("MainMenu");
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
+            SceneManager.LoadScene("SpaceShip MainMenu");
         }
     }
 }

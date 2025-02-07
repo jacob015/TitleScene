@@ -26,13 +26,13 @@ namespace TouchUp
         public void GameExit()
         {
             Time.timeScale = 1;
-            SceneManager.LoadScene("TouchUP/Scenes/Title");
+            SceneManager.LoadScene("TouchUP/Scenes/TouchUP Title");
         }
 
         public void GameRestart()
         {
             Time.timeScale = 1;
-            SceneManager.LoadScene("TouchUP/Scenes/Main");
+            SceneManager.LoadScene("TouchUP/Scenes/TouchUP Main");
         }
     }
 }

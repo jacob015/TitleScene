@@ -48,12 +48,12 @@ namespace SpaceShipRepair
         public void RestartGame()
         {
             Debug.Log("Restart");
-            SceneManager.LoadScene("SpaceshipRepair/Scenes/GameScene");
+            SceneManager.LoadScene("SpaceshipRepair/Scenes/SpaceShip GameScene");
         }
 
         public void QuitToMainMenu()
         {
-            SceneManager.LoadScene("SpaceshipRepair/Scenes/MainMenu");
+            SceneManager.LoadScene("SpaceshipRepair/Scenes/SpaceShip MainMenu");
         }
     }
 }

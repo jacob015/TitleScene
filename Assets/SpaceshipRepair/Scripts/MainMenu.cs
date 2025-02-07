@@ -9,7 +9,7 @@ namespace SpaceShipRepair
     {
         public void StartGame()
         {
-            SceneManager.LoadScene("SpaceshipRepair/Scenes/GameScene");
+            SceneManager.LoadScene("SpaceshipRepair/Scenes/SpaceShip GameScene");
         }
 
         public void OpenSettings()
