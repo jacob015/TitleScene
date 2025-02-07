@@ -32,7 +32,7 @@ public class DBLoader : MonoBehaviour
     }
     public void ReLoad()
     {
-        NoClickText.text = "·ÎµùÁß";
+        NoClickText.text = "ë¡œë”©ì¤‘";
         ReLoadButton.SetActive(false);
         GuestSpeechDB.instance.LoadData();
         GuestDB.instance.LoadData();
@@ -45,7 +45,7 @@ public class DBLoader : MonoBehaviour
         Time.timeScale = 0;
         if (Application.internetReachability == NetworkReachability.NotReachable)
         {
-            LoadFail("ÀÎÅÍ³İ ¿¬°á È®ÀÎ");
+            LoadFail("ì¸í„°ë„· ì—°ê²° í™•ì¸");
             return;
         }
         StartCoroutine(MatterLoad());
@@ -65,7 +65,7 @@ public class DBLoader : MonoBehaviour
         }
         if (DB.MatterDatas.Count == 0)
         {
-            LoadFail("¿¬°á½Ã°£ ÃÊ°ú");
+            LoadFail("ì—°ê²°ì‹œê°„ ì´ˆê³¼");
             yield break;
         }
         for (int i = 0; i < DB.MatterDatas.Count; i++)
@@ -97,7 +97,7 @@ public class DBLoader : MonoBehaviour
         }
         if (DB.DrinkDatas.Count == 0)
         {
-            LoadFail("¿¬°á½Ã°£ ÃÊ°ú");
+            LoadFail("ì—°ê²°ì‹œê°„ ì´ˆê³¼");
             yield break;
         }
         for (int i = 0; i < DB.DrinkDatas.Count; i++)
@@ -136,7 +136,7 @@ public class DBLoader : MonoBehaviour
         }
         if (DB.GuestDatas.Count == 0 && speechDB.GuestSpeechDatas.Count == 0)
         {
-            LoadFail("¿¬°á½Ã°£ ÃÊ°ú");
+            LoadFail("ì—°ê²°ì‹œê°„ ì´ˆê³¼");
             yield break;
         }
         int speechDBIndex = 0;
@@ -145,26 +145,26 @@ public class DBLoader : MonoBehaviour
             GuestDB.GuestInfo info = DB.GuestDatas[i];
             int NPC_ID = i + 1001;
 
-            // ¼Õ´Ô °´Ã¼ »ı¼º
+            // ì†ë‹˜ ê°ì²´ ìƒì„±
             Guest guest = new Guest(info.ID, info.Name, info.Personality, info.GoodFlavor, info.BadFlavor, info.Feature, info.Explanation);
-            //Debug.Log($" [guestLoading] ¼Õ´Ô {info.Name} Ãß°¡ Áß...");
-            // ¼Õ´Ô ID°¡ ÀÏÄ¡ÇÏ´Â ´ë»ç¸¦ ¸®½ºÆ®¿¡ Ãß°¡
+            //Debug.Log($" [guestLoading] ì†ë‹˜ {info.Name} ì¶”ê°€ ì¤‘...");
+            // ì†ë‹˜ IDê°€ ì¼ì¹˜í•˜ëŠ” ëŒ€ì‚¬ë¥¼ ë¦¬ìŠ¤íŠ¸ì— ì¶”ê°€
             for (; speechDBIndex < speechDB.GuestSpeechDatas.Count; speechDBIndex++)
             {
                 GuestSpeechDB.GuestSpeechInfo speechInfo = speechDB.GuestSpeechDatas[speechDBIndex];
 
                 if (speechInfo.NPC_ID != NPC_ID)
-                    break; // ´Ù¸¥ NPCÀÇ ´ë»ç¶ó¸é ¹İº¹ Á¾·á
+                    break; // ë‹¤ë¥¸ NPCì˜ ëŒ€ì‚¬ë¼ë©´ ë°˜ë³µ ì¢…ë£Œ
 
-                // ´ë»ç µ¥ÀÌÅÍ Ãß°¡
+                // ëŒ€ì‚¬ ë°ì´í„° ì¶”ê°€
                 Guest.speechData sData = new Guest.speechData(speechInfo.speechType, speechInfo.speechCategory, speechInfo.Reaction, speechInfo.Explanation);
                 guest.speechDatas.Add(sData);
             }
 
-            // ¼Õ´Ô ÀÌ¸§°ú Á¤º¸¸¦ Ãß°¡
+            // ì†ë‹˜ ì´ë¦„ê³¼ ì •ë³´ë¥¼ ì¶”ê°€
             //guest.name = info.Name;
             makingSystem.customer.guests.Add(info.ID, guest);
-            //Debug.Log($" [guestLoading] ¼Õ´Ô {info.Name} µî·Ï ¿Ï·á.");
+            //Debug.Log($" [guestLoading] ì†ë‹˜ {info.Name} ë“±ë¡ ì™„ë£Œ.");
         }
         LoadEnd();
     }
