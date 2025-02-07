@@ -49,6 +49,5 @@ public class MatterDB : MonoBehaviour
         떫은맛
     }
     [Space, SerializeField]
-    [ArrayElementTitle("Name")]
     public List<MatterInfo> MatterDatas = new List<MatterInfo>();
 }

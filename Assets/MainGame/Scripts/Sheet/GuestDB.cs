@@ -57,6 +57,5 @@ public class GuestDB : MonoBehaviour
         떫은맛
     }
     [Space, SerializeField]
-    [ArrayElementTitle("Name")]
     public List<GuestInfo> GuestDatas = new List<GuestInfo>();
 }

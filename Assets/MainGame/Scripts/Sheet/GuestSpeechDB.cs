@@ -54,6 +54,5 @@ public class GuestSpeechDB : MonoBehaviour
         반응
     }
     [SerializeField]
-    [ArrayElementTitle("NPC_ID")]
     public List<GuestSpeechInfo> GuestSpeechDatas = new List<GuestSpeechInfo>();
 }

@@ -89,6 +89,5 @@ public class DrinkDB : MonoBehaviour
         완벽
     }
     [Space, SerializeField]
-    [ArrayElementTitle("Name")]
     public List<DrinkInfo> DrinkDatas = new List<DrinkInfo>();
 }
