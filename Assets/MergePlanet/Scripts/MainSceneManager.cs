@@ -23,6 +23,6 @@ public class MainSceneManager : MonoBehaviour
     }
     public void QuitBtn()
     {
-        Application.Quit();
+        SceneManager.LoadScene("LobbyMain/Scenes/MainScene");
     }
 }
