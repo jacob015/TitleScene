@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Anibel
 {
@@ -8,7 +9,7 @@ namespace Anibel
 	{
 		public void GameExitButton()
 		{
-			Application.Quit();
+			SceneManager.LoadScene("LobbyMain/Scenes/MainScene");
 		}
 	}
 }
