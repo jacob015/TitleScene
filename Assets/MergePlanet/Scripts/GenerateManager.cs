@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 namespace PlanetMerge
 {
@@ -13,11 +12,10 @@ namespace PlanetMerge
         public bool isDrag;
         public bool isCool;
 
-        public GameObject plants;
-        public GameObject pool;
         public PlanetDB.PlanetInfo planetInfo;
         public int RandonValue;
         public int ran;
+
         private void Start()
         { 
             Rool();
@@ -92,9 +90,10 @@ namespace PlanetMerge
                 if (transform.position.y >= RemoveYPos) Trash();
                 else
                 {
-                    GameObject Gme = Instantiate(plants, pool.transform);
+                    GameObject Gme = ObjectPoolManager.instance.Pool.Get();
                     Gme.transform.position = transform.position;
                     Gme.GetComponent<Planet>().PlanetData = planetInfo;
+                    Gme.GetComponent<Planet>().changedPlanet();
                 }
                 GameManager.instance.TimerImage.fillAmount = 1;
                 GameManager.instance.TimerImage.color = Color.green;
