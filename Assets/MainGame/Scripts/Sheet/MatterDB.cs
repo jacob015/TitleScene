@@ -6,7 +6,7 @@ public class MatterDB : MonoBehaviour
 {
     public static MatterDB instance;
 
-    public readonly string RANGE = "B3:E";
+    public readonly string RANGE = "B3:F";
     public readonly long SHEET_ID = 1343722466;
     private void Awake()
     {
@@ -35,6 +35,7 @@ public class MatterDB : MonoBehaviour
         public string Explanation;
         [Space, Tooltip("주요 맛")]
         public Flavor[] Flavor;
+        public Sprite MatterSprite;
     }
     public enum Flavor
     {

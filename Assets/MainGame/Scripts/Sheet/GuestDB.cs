@@ -7,7 +7,7 @@ public class GuestDB : MonoBehaviour
 {
     public static GuestDB instance;
 
-    public readonly string RANGE = "B4:H";
+    public readonly string RANGE = "B4:I";
     public readonly long SHEET_ID = 0;
     private void Awake()
     {
@@ -43,6 +43,7 @@ public class GuestDB : MonoBehaviour
         public string Feature;
         [Tooltip("NPC 설명"), TextArea(3, 10)]
         public string Explanation;
+        public Sprite GuestSprite;
     }
     public enum Flavor
     {

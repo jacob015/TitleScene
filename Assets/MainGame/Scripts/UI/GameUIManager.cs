@@ -139,7 +139,7 @@ public class GameUIManager : MonoBehaviour
         List<string> values = new List<string>(customer.makingSystem.drinks.Keys);
         for (int i = 0; i < MaxGuest; i++)
         {
-            Guests[i] = Random.Range(1001, 1000 + GuestDB.instance.GuestDatas.Count) + 1;
+            Guests[i] = Random.Range(1001, 1001 + GuestDB.instance.GuestDatas.Count);
             GuestList.transform.GetChild(i).gameObject.SetActive(true);
             GuestMenu menu = new GuestMenu(customer.makingSystem.drinks[values[Random.Range(0, values.Count)]], 60, 0, 0);
             GuestMenus.Add(menu);

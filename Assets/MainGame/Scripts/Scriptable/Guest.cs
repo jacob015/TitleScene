@@ -12,10 +12,11 @@ public class Guest// : ScriptableObject
     public Flavor BadFlavor;
     public string Feature;
     public string Explanation;
+    public Sprite GuestSprite;
     public List<speechData> speechDatas = new List<speechData>();
-    public Guest(int id, string name, string personality, Flavor[] goodFlavor, Flavor badFlavor, string feature, string explation)
+    public Guest(int id, string name, string personality, Flavor[] goodFlavor, Flavor badFlavor, string feature, string explation, Sprite sprite)
     {
-        ID = id; Name = name; Personality = personality; GoodFlavor = goodFlavor; BadFlavor = badFlavor; Feature = feature; Explanation = explation;
+        ID = id; Name = name; Personality = personality; GoodFlavor = goodFlavor; BadFlavor = badFlavor; Feature = feature; Explanation = explation; GuestSprite = sprite;
     }
     public class speechData
     {
