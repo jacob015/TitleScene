@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.UI;
 
 namespace PlanetMerge
 {
     public class Planet : MonoBehaviour
     {
+        public IObjectPool<GameObject> Pool { get; set; }
+
         public GameObject ScoreTextObject;
         public ParticleSystem Effect;
         public PlanetDB.PlanetInfo PlanetData;
@@ -14,15 +17,10 @@ namespace PlanetMerge
         Rigidbody rigid;
         SphereCollider sphere;
         public float DeadTime;
-        void Start()
+        void Awake()
         {
             rigid = GetComponent<Rigidbody>();
             sphere = GetComponent<SphereCollider>();
-            changedPlanet();
-        }
-        private void OnEnable()
-        {
-
         }
         private void OnCollisionStay(Collision collision)
         {
@@ -70,7 +68,7 @@ namespace PlanetMerge
                 yield return null;
             }
             isMarge = false;
-            gameObject.SetActive(false);
+            Pool.Release(this.gameObject);
         }
         public void LevelUP()
         {
@@ -95,7 +93,6 @@ namespace PlanetMerge
             rigid.isKinematic = false;
             transform.localScale = new Vector3(PlanetData.Size, PlanetData.Size, PlanetData.Size);
             GetComponent<SpriteRenderer>().sprite = PlanetData.Image;
-            //GetComponent<SpriteRenderer>().sprite = PlanetData.Image;
         }
         public void PointUP()
         {
