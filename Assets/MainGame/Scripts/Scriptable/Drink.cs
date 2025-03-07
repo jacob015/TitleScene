@@ -15,9 +15,11 @@ public class Drink// : ScriptableObject
     public int Bonus;
     public Satisfaction satisfaction;
     public int ProduceTime;
+    public Sprite DrinkSprite;
 
-    public Drink(string name, DrinkType type, List<Matter> requiredMatter, List<Matter> extraMatter, string feature, Difficulty Difficulty,int price,int bonus,Satisfaction Satisfaction,int produceTime)
+    public Drink(string name, DrinkType type, List<Matter> requiredMatter, List<Matter> extraMatter, string feature, Difficulty Difficulty,int price, int bonus, Satisfaction Satisfaction, int produceTime, Sprite drinkSprite)
     {
-        Name = name; drinkType = type; RequiredMatter = requiredMatter; ExtraMatter = extraMatter; Feature = feature; difficulty = Difficulty; Price = price; Bonus = bonus; satisfaction = Satisfaction; ProduceTime = produceTime;
+        Name = name; drinkType = type; RequiredMatter = requiredMatter; ExtraMatter = extraMatter; Feature = feature; difficulty = Difficulty; Price = price; Bonus = bonus; satisfaction = Satisfaction; ProduceTime = produceTime; DrinkSprite = drinkSprite;
+        DrinkSprite = drinkSprite;
     }
 }

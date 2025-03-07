@@ -71,7 +71,7 @@ public class DBLoader : MonoBehaviour
         for (int i = 0; i < DB.MatterDatas.Count; i++)
         {
             MatterDB.MatterInfo info = DB.MatterDatas[i];
-            Matter matter = new Matter(info.Name, info.Origin, info.Explanation, Array.ConvertAll(info.Flavor, e => (int)e), null);
+            Matter matter = new Matter(info.Name, info.Origin, info.Explanation, Array.ConvertAll(info.Flavor, e => (int)e), info.MatterSprite);
             string key = info.Name.Replace(" ", "");
             //matter.name = info.Name;
             makingSystem.matters.Add(key, matter);
@@ -114,7 +114,7 @@ public class DBLoader : MonoBehaviour
                 extraMatterMatters.Add(makingSystem.matters[info.ExtraMatter[b].ToString()]);
             }
 
-            Drink drink = new Drink(info.Name, info.drinkType, requiredMatters, extraMatterMatters, info.Feature, info.difficulty, info.Price, info.Bonus, info.satisfaction, info.ProduceTime);
+            Drink drink = new Drink(info.Name, info.drinkType, requiredMatters, extraMatterMatters, info.Feature, info.difficulty, info.Price, info.Bonus, info.satisfaction, info.ProduceTime, info.DrinkSprite);
             //drink.name = info.Name;
             makingSystem.drinks.Add(info.Name, drink);
         }
@@ -146,7 +146,7 @@ public class DBLoader : MonoBehaviour
             int NPC_ID = i + 1001;
 
             // 손님 객체 생성
-            Guest guest = new Guest(info.ID, info.Name, info.Personality, info.GoodFlavor, info.BadFlavor, info.Feature, info.Explanation);
+            Guest guest = new Guest(info.ID, info.Name, info.Personality, info.GoodFlavor, info.BadFlavor, info.Feature, info.Explanation, info.GuestSprite);
             //Debug.Log($" [guestLoading] 손님 {info.Name} 추가 중...");
             // 손님 ID가 일치하는 대사를 리스트에 추가
             for (; speechDBIndex < speechDB.GuestSpeechDatas.Count; speechDBIndex++)

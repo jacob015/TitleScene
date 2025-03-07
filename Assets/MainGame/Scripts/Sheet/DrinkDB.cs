@@ -6,7 +6,7 @@ public class DrinkDB : MonoBehaviour
 {
     public static DrinkDB instance;
 
-    public readonly string RANGE = "B3:K";
+    public readonly string RANGE = "B3:L";
     public readonly long SHEET_ID = 1379756077;
     private void Awake()
     {
@@ -47,6 +47,7 @@ public class DrinkDB : MonoBehaviour
         public Satisfaction satisfaction;
         [Tooltip("제작 시간")]
         public int ProduceTime;
+        public Sprite DrinkSprite;
     }
     public enum DrinkType
     {

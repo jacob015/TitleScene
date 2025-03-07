@@ -268,7 +268,7 @@ namespace ColorMatch
         }
         public void SetButton()
         {
-            if(!countdownText.gameObject.activeSelf && !WarningObject.activeSelf)
+            if(!countdownText.gameObject.activeSelf && !WarningObject.activeSelf && !EndGameUI.activeSelf)
             {
                 Set.SetActive(!Set.activeSelf);
                 StartCoroutine(SwichCon());

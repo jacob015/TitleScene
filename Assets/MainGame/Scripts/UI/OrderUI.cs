@@ -82,7 +82,7 @@ public class OrderUI : MonoBehaviour
     public void LoadGuest()
     {
         MovePlace();
-        //나중에 이미지도 바꾸게 하기
+        GuestImage.sprite = GameUIManager.customer.guests[GameUIManager.Guests[GameUIManager.CurrentNum]].GuestSprite;
         GuestName.text = GameUIManager.customer.guests[GameUIManager.Guests[GameUIManager.CurrentNum]].Name;
         OrderMenu.text = GameUIManager.customer.guests[GameUIManager.Guests[GameUIManager.CurrentNum]].speechDatas[0].Reaction + $"\n({GameUIManager.GuestMenus[GameUIManager.CurrentNum].needDrink.Name})";
     }

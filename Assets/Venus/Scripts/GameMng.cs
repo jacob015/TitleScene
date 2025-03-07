@@ -112,7 +112,7 @@ public class GameMng : MonoBehaviour
             else
             {
                 isEnd = true;
-                SceneManager.LoadScene("Result");
+                SceneManager.LoadScene("Alien Result");
             }
         }
 
