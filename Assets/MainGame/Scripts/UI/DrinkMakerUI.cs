@@ -12,6 +12,7 @@ public class DrinkMakingManager : MonoBehaviour
     [Header("기능")]
     public Image[] drinkImages; // 드래그 가능한 재료 배열
     public BoxCollider2D dropArea; // 드랍 영역의 BoxCollider2D
+    public GameObject MatterArea;
 
     private List<string> droppedMatter = new List<string>(); // 드랍된 재료 이름을 저장할 리스트
 
@@ -112,9 +113,22 @@ public class DrinkMakingManager : MonoBehaviour
         // BoxCollider2D로 드랍 영역 확인
         if (dropArea.OverlapPoint(mousePos))
         {
-            MakingSystem.AddMatter(MatterMouseCursor.name);
+            if(GameUIManager.GetAddedMatters().Count <= 3)
+            {
+                MatterArea.transform.GetChild(GameUIManager.GetAddedMatters().Count).GetComponent<Image>().sprite = MatterMouseCursor.GetComponent<Image>().sprite;
+                MakingSystem.AddMatter(MatterMouseCursor.name);
+            }
+            else
+            {
+                Debug.Log($"현재 통이 가득 차서 {MatterMouseCursor.name}은 넣지 못함니다");
+            }
         }
         MatterMouseCursor.SetActive(false);
+    }
+    public void ResetMatter()
+    {
+        for (int i = 0; i < GameUIManager.GetAddedMatters().Count + 1; i++)
+            MatterArea.transform.GetComponentsInChildren<Image>()[i].sprite = null;
     }
     /*
     // 배열 초기화 메서드

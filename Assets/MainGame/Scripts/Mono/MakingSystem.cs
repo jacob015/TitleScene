@@ -17,12 +17,14 @@ public class MakingSystem : MonoBehaviour
     public bool LoadEnd = false;
 
     GameUIManager GameUIManager;
+    DrinkMakingManager drinkMakingManager;
 
     [HideInInspector]
     public Coroutine coroutine;
     void Awake()
     {
         GameUIManager = GameObject.Find("MainCanvas").GetComponent<GameUIManager>();
+        drinkMakingManager= GameObject.Find("MakingSystem").GetComponent<DrinkMakingManager>();
     }
     public void AddMatter(string matterName)
     {
@@ -36,6 +38,7 @@ public class MakingSystem : MonoBehaviour
     }
     public void ResetMatter()
     {
+        drinkMakingManager.ResetMatter();
         GameUIManager.GetAddedMatters().Clear();
         Debug.Log("재료 초기화");
     }
